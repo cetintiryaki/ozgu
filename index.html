@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Avukat Özgü Gürcan</title>
+
+  <!-- Fonts & Bootstrap -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --main-dark:#0a192f;
+      --main-mid:#112d4e;
+      --main-light:#3f72af;
+      --highlight:#3a86ff;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+    /* Navbar */
+    .navbar {
+      background: var(--main-dark);
+    }
+    .navbar .nav-link, .navbar .navbar-brand {
+      color: #fff !important;
+    }
+    .navbar .nav-link {
+      position: relative;
+      margin: 0 6px;
+    }
+    .navbar .nav-link::after {
+      content: "";
+      position: absolute;
+      left: 0; bottom: -4px;
+      width: 0; height: 2px;
+      background: var(--highlight);
+      transition: width .3s ease;
+    }
+    .navbar .nav-link:hover::after {
+      width: 100%;
+    }
+    /* Hero */
+    .hero-section {
+      background: linear-gradient(135deg, #0a192f, #112d4e);
+      color: #fff;
+      padding: 6rem 0;
+    }
+    .hero-section h1 {
+      font-size: 3rem;
+      font-weight: 800;
+    }
+    .hero-section p {
+      max-width: 550px;
+      opacity: .9;
+    }
+    .btn-primary {
+      border-radius: 50px;
+      padding: .75rem 1.5rem;
+      font-weight: 600;
+      box-shadow: 0 6px 20px rgba(0,0,0,.15);
+    }
+    /* Cards */
+    .card {
+      border: none;
+      border-radius: 12px;
+      transition: all .3s ease;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 24px rgba(0,0,0,.1);
+    }
+    .card-title {
+      color: var(--main-light);
+      font-weight: 600;
+    }
+    /* Contact */
+    #contact {
+      background: var(--main-mid);
+    }
+    #contact a { color: var(--highlight); }
+    /* Footer */
+    footer {
+      background: var(--main-dark);
+      color: #ccc;
+      font-size: .9rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+    <div class="container px-3">
+      <a class="navbar-brand fw-bold" href="#home">⚖ Av. Özgü Gürcan</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#home">Ana Sayfa</a></li>
+          <li class="nav-item"><a class="nav-link" href="#practice">Uzmanlık</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">Hakkımda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">İletişim</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero-section text-center text-lg-start">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <h1 class="fw-bold mb-3">Avukat Özgü Gürcan</h1>
+            <p class="lead">Müvekkillerine şeffaf, güvenilir ve çözüm odaklı bir hukuk hizmeti sunar.</p>
+            <a href="#contact" class="btn btn-primary btn-lg mt-3">İletişime Geç</a>
+          </div>
+          <div class="col-lg-5 text-center">
+            <img src="./ozgu-portrait.jpg" alt="Özgü Gürcan portre" class="img-fluid rounded-circle shadow" width="250" height="250">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRACTICE AREAS -->
+    <section id="practice" class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Uzmanlık Alanları</h2>
+          <p class="text-secondary">Hukukun farklı dallarında deneyim</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body text-center">
+                <i class="bi bi-people fs-1 text-primary mb-3"></i>
+                <h5 class="card-title">Aile Hukuku</h5>
+                <p>Boşanma, velayet, nafaka ve diğer aile hukuku süreçlerinde danışmanlık.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body text-center">
+                <i class="bi bi-shield-lock fs-1 text-primary mb-3"></i>
+                <h5 class="card-title">Ceza Hukuku</h5>
+                <p>Ceza davaları ve soruşturmalarda etkin savunma ve hukuki destek.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body text-center">
+                <i class="bi bi-briefcase fs-1 text-primary mb-3"></i>
+                <h5 class="card-title">Ticaret Hukuku</h5>
+                <p>Şirket kuruluşu, ticari sözleşmeler ve arabuluculuk süreçleri.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6">
+            <h2 class="fw-bold mb-3">Hakkımda</h2>
+            <p>Eskişehir Barosu’na kayıtlı Av. Özgü Gürcan, bireysel ve kurumsal müvekkillerine hukukun farklı alanlarında hizmet vermektedir.</p>
+            <p class="text-secondary fst-italic">“Adaletin olmadığı yerde özgürlük olmaz.”</p>
+          </div>
+          <div class="col-lg-6 text-center">
+            <img src="./law.jpg" alt="Adalet temsili" class="img-fluid rounded shadow">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-5 text-white">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <h2 class="fw-bold">İletişim</h2>
+            <p class="mb-4">Sorularınız için bizimle iletişime geçebilirsiniz.</p>
+            <ul class="list-unstyled">
+              <li><i class="bi bi-telephone me-2"></i><a href="tel:+905001112233" class="text-white">+90 500 111 22 33</a></li>
+              <li><i class="bi bi-envelope me-2"></i><a href="mailto:ozgugurcan.av@gmail.com" class="text-white">ozgugurcan.av@gmail.com</a></li>
+              <li><i class="bi bi-geo-alt me-2"></i>İstanbul, Türkiye</li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <form class="row g-3 bg-white p-3 rounded text-dark shadow-sm" action="mailto:ozgugurcan.av@gmail.com" method="post" enctype="text/plain">
+              <div class="col-md-6">
+                <label for="name" class="form-label">Adınız</label>
+                <input type="text" class="form-control" id="name" name="Name" required>
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">E-posta</label>
+                <input type="email" class="form-control" id="email" name="Email" required>
+              </div>
+              <div class="col-12">
+                <label for="message" class="form-label">Mesajınız</label>
+                <textarea id="message" name="Message" rows="4" class="form-control" placeholder="Mesajınızı yazınız…" required></textarea>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-primary">Gönder</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-3">
+      <div class="container text-center">
+        <p class="mb-0">© <span id="year"></span> | Avukat Özgü Gürcan</p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
